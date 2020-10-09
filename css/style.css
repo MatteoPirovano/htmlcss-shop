@@ -15,14 +15,15 @@ main{
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
+  display: inline-block;
 }
 #promotional{
   height: 20px;
   width: 30px;
-  background-color: orange;
   position: absolute;
   top: 0;
   right: 0;
+  background-color: lightgreen;
 }
 .heart {
   width: 100%;
@@ -30,4 +31,8 @@ main{
   bottom: 0;
   font-size: 35px;
   color: red;
+  display: none;
+}
+.item:hover > .heart {
+  display: block;
 }
